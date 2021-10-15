@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<sys/types.h>
+#include<dirent.h>
+char n;
+int main(int argc,char *argv[ ])
+{
+DIR *dr;
+struct dirent *sd;
+if(n==9)
+{
+dr=opendir(" /home/elcot/usr/bin");
+if(dr==NULL)
+{
+printf("Error");
+exit(1);
+}
+while((sd=readdir(dr)!=NULL)
+}
+closedir(dr);
+return 0;
+}
